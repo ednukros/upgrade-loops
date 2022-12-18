@@ -32,21 +32,34 @@ const alumns = [{
 ]
 
 
-let finalNote = [];
+
 for (const alumn of alumns) {
+
+    
 
 
     if(alumn.T1===false && alumn.T2 ===false || alumn.T1===false && alumn.T3===false || alumn.T2===false && alumn.T3 === false){
 
-        //finalNote.push(alumn);
-        finalNote.push(alumn,alumn.isApproved=false)
+        
+        alumn.isApproved=false;
+        
         
     }else{
        
-       //finalNote.push(alumn);
-       finalNote.push(alumn,alumn.isApproved=true)
+      
+       alumn.isApproved=true;
     }
-
+   
 }
 
-console.log(finalNote);
+console.log(alumns);
+
+
+
+
+  
+   
+
+
+
+
